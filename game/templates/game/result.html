@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors</title>
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'game/styles.css' %}">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <p>Your choice: {{ user_choice }}</p>
+    <p>Computer's choice: {{ computer_choice }}</p>
+    <p>{{ result }}</p>
+    <a href="{% url 'home' %}">Play again</a>
+</body>
+</html>

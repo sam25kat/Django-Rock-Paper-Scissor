@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+form {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+button {
+    background: #00c6ff;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #00f260;
+    background: linear-gradient(to right, #0575e6, #00f260);
+}
+
+p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background: #ee0979;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: #ff416c;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px #ff416c, 0 0 20px #ff416c, 0 0 30px #ff416c, 0 0 40px #ff416c, 0 0 50px #ff416c, 0 0 60px #ff416c, 0 0 70px #ff416c;
+    }
+    to {
+        text-shadow: 0 0 20px #ff4b2b, 0 0 30px #ff4b2b, 0 0 40px #ff4b2b, 0 0 50px #ff4b2b, 0 0 60px #ff4b2b, 0 0 70px #ff4b2b, 0 0 80px #ff4b2b;
+    }
+}
